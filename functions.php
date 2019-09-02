@@ -10,7 +10,7 @@ function split_special_shipping_class_items( $packages ) {
 	$new_package['contents']        = array();
 	$new_package['contents_cost']   = 0;
 	$new_package['applied_coupons'] = array();
-	$new_package['ship_via']        = array( 'local_pickup' ); // Only allow flat rate for items in special class
+	$new_package['ship_via']        = array( 'local_pickup' ); // Only allow local pickup for items in special class
 	
 	foreach ( WC()->cart->get_cart() as $item_key => $item ) {
 		// Is the product in the special class?
